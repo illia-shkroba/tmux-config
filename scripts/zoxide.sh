@@ -21,6 +21,7 @@ zoxide query -l --score \
     --bind 'enter:become(tmux split-window -v -c {2..})' \
     --bind 'ctrl-x:become(tmux split-window -v -c {2..})' \
     --bind 'ctrl-v:become(tmux split-window -h -c {2..})' \
-    --bind 'ctrl-t:become(tmux new-window -c {2..})'
+    --bind 'ctrl-t:become(tmux new-window -c {2..})' \
+    --bind 'alt-n:execute-silent(tmux set-buffer -- {2..})+abort'
 
 exit 0
